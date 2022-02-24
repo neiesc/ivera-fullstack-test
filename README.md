@@ -1,8 +1,10 @@
 ## Tech test to integrate the iVera Team 🏡
 
-Front-end and Back-end of Marvel application 
-<hr>
-Create a Rest API that consumes the official [Marvel Comics API](https://developer.marvel.com/docs).
+![SoExcited~GIF](https://user-images.githubusercontent.com/25944558/155590591-4061828a-e437-4b15-80cb-f56a30205bca.gif)
+
+<br>
+
+## Create a Rest API and a SPA that consumes and shows the official [Marvel Comics API](https://developer.marvel.com/docs).
 
 ## :computer: Functionalities (Back-end)
 🔴 A route to create admin users;<br>
@@ -17,10 +19,16 @@ Create a Rest API that consumes the official [Marvel Comics API](https://develop
 🔴 A page of **character details**, that shows all info returned from the backend by clicking on a character on the list created before;<br>
 
 ## Technologies and tools you have to use:
-- Javascript ES6+
-- Nodejs
-- Vuejs or Reactjs (for the front-end)
-- Express (for the back-end)
-- Be free to use any other tools/tecs if you need
+☑️ Javascript ES6+ <br>
+☑️ Nodejs <br>
+☑️ Vuejs or Reactjs (for the front-end) <br>
+☑️ Express (for the back-end) <br>
+☑️ Be free to use any other tools/tecs if you need <br>
 
-## Create a README.md showing the steps to run the application
+
+## Start instructions
+- Create a fork of this project
+- Do all the tasks to complete the application
+- Create a README.md showing the steps to run the application
+- Make a merge request on the main branch
+- Send us the link of the merge request
