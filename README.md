@@ -21,7 +21,7 @@
 ## Technologies and tools you have to use:
 ☑️ Javascript ES6+ <br>
 ☑️ Nodejs <br>
-☑️ Vuejs or Reactjs (for the front-end) <br>
+☑️ Any front-end framework/library (feel free to use [Vuejs](https://vuejs.org/), [Reactjs](https://reactjs.org/), [EJS](https://ejs.co/) or any other 🚀) <br>
 ☑️ Express (for the back-end) <br>
 ☑️ Be free to use any other tools/tecs if you need <br>
 
