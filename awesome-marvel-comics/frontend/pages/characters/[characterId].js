@@ -42,7 +42,7 @@ const Character = ({ character }) => {
 };
 
 export async function getStaticPaths() {
-  const res = await fetch("http://localhost:3001/v1/characters");
+  const res = await fetch(`${process.env.AWESOME_BACKEND_MARVEL_COMICS_BASE_URL}/v1/characters`);
   const characters = await res.json();
 
   const paths = characters.data.results.map((character) => ({
@@ -53,7 +53,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const res = await fetch(`http:localhost:3001/v1/characters/${params.characterId}`);
+  const res = await fetch(`${process.env.AWESOME_BACKEND_MARVEL_COMICS_BASE_URL}/v1/characters/${params.characterId}`);
   const character = await res.json();
 
   return { props: { character: character.data.results[0] } };

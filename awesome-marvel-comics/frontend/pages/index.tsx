@@ -49,7 +49,7 @@ const Home: NextPage = ({ characters }) => {
 }
 
 export async function getStaticProps() {
-  const res = await fetch('http://localhost:3001/v1/characters')
+  const res = await fetch(`${process.env.AWESOME_BACKEND_MARVEL_COMICS_BASE_URL}/v1/characters`)
   const characters = await res.json()
 
   return {
