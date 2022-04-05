@@ -19,7 +19,7 @@ const Home: NextPage = ({ characters }) => {
 
         <div className={styles.grid}>
           {characters.data.results.map((post) => (
-            <a href="/characters/{post.id}" className={styles.card}>
+            <a href={`/characters/${post.id}`} className={styles.card}>
               <h2>{post.name}</h2>
               <Image
                 src={`${post.thumbnail.path}.${post.thumbnail.extension}`}
@@ -44,12 +44,12 @@ const Home: NextPage = ({ characters }) => {
           </span>
         </a>
       </footer>
-    </div >
+    </div>
   )
 }
 
 export async function getStaticProps() {
-  const res = await fetch('http://localhost:3001/characters')
+  const res = await fetch('http://localhost:3001/v1/characters')
   const characters = await res.json()
 
   return {
