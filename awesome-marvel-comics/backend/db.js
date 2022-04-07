@@ -12,10 +12,17 @@ db.serialize(function() {
   )")
 
   db.run("CREATE TABLE IF NOT EXISTS access_tokens ( \
-    user_id TEXT UNIQUE, \
-    value BLOB UNIQUE \
+    user_id TEXT, \
+    token BLOB UNIQUE \
   )")
 
+  db.run("CREATE TABLE IF NOT EXISTS history_requests ( \
+    method TEXT, \
+    url TEXT, \
+    params TEXT \
+  )")
+
+  // Default user {user: 'admin', password: 123456}
   var salt = crypto.randomBytes(16);
   db.run('INSERT OR IGNORE INTO users (username, hashed_password, salt) VALUES (?, ?, ?)', [
     'admin',
