@@ -5,9 +5,6 @@
 
 ## Back-end
 ### Routes
-|Method|endpoint|exemple|
-
-
 |Method|Endpoint|Exemple|
 --- | --- | ---|
 |GET|/v1/characters|https http://localhost:3001/v1/characters|
