@@ -11,7 +11,7 @@ module.exports = {
     next();
   },
   getAll: (req, res, next) => {
-    db.get(
+    db.all(
       "SELECT * FROM history_requests",
       function (err, row) {
         if (err) {

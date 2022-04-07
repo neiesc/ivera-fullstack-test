@@ -1,11 +1,24 @@
 # Awesome Marvel Comics
 
 ## Back-end
+### Routes
+|Method|endpoint|exemple|
 
+
+|Method|Endpoint|Exemple|
+--- | --- | ---|
+|GET|/v1/characters|https http://localhost:3001/v1/characters|
+|GET|/v1/characters/:characterId|https http://localhost:3001/v1/characters/1011136|
+|POST|/admin/login|https POST http://localhost:3001/admin/login user=admin password=123456|
+|GET|/admin/history|https http://localhost:3001/admin/history Authorization:'Bearer sfUs9ESTDD8HudoQ2yUGmg=='|
+
+* All exemples use the [HTTPie](https://httpie.io/) but you can use [Postman](https://www.postman.com/), [Insomnia](https://insomnia.rest/) and more!!!
+
+### Runnning in dev
 ```shell
 cd backend
 npm run dev # Starts the development server.
-# Open http://localhost:3001
+# See exemples
 ```
 
 ## Front-end
